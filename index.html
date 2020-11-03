@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        /* Center website */
+        .main {
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row {
+            margin: 10px -16px;
+        }
+
+        /* Add padding BETWEEN each column */
+        .row,
+        .row>.column {
+            padding: 12px;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none;
+            /* Hide all elements by default */
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: block;
+        }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MAIN (Center website) -->
+    <div class="main">
+
+        <h2>SAGAR RAJENDRA RAVKHANDE</h2>
+        <h2>DevOps & Cloud Engineer</h2>
+        <hr>
+
+        <!--h2>PORTFOLIO</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('courses')"> Courses</button>
+  <button class="btn" onclick="filterSelection('Industry')"> Industry</button>
+</div-->
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+
+
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/ACA Cloud Computing Certification.png" alt="Alibaba" style="width:100%">
+                    <h4>ACA Cloud Computing Associate</h4>
+                    <p>Alibaba Cloud</p>
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Alibaba ACA Security.png" alt="Alibaba" style="width:100%">
+                    <h4>ACA Cloud Security Associate</h4>
+                    <p>Alibaba Cloud</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/ACA Cloud Native Certification.png" alt="Alibaba" style="width:100%">
+                    <h4>ACA Cloud Native Associate</h4>
+                    <p>Alibaba Cloud</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Alibaba ACA Big Data.png" alt="Alibaba" style="width:100%">
+                    <h4>ACA Big Data Associate</h4>
+                    <p>Alibaba Cloud</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Alibaba Cloud DevOps Engineer.png" alt="Alibaba" style="width:100%">
+                    <h4>Alibaba Cloud DevOps Engineer</h4>
+                    <p>Alibaba Cloud</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Juniper-Security.JPG" alt="Juniper" style="width:100%">
+                    <h4>Juniper Networks Certified Security Associate</h4>
+                    <p>Juniper Networks</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Juniper-CLOUD.JPG" alt="Juniper" style="width:100%">
+                    <h4>Juniper Networks Certified Cloud Associate</h4>
+                    <p>Juniper Networks</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Juniper-JUNOS.JPG" alt="Juniper" style="width:100%">
+                    <h4>Juniper Networks Certified Junos Associate</h4>
+                    <p>Juniper Networks</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/JNCIA-DevOps certificate-1.jpg" alt="Juniper" style="width:100%">
+                    <h4>Juniper Networks Certified Devops Associate</h4>
+                    <p>Juniper Networks</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Juniper Networks Certified Design certificate-1.jpg" alt="Juniper" style="width:100%">
+                    <h4>Juniper Networks Certified Design Associate</h4>
+                    <p>Juniper Networks</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/az-900.JPG" alt="Azure" style="width:100%">
+                    <h4>Microsoft Certified Azure Fundamentals</h4>
+                    <p>Azure</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/AZ-104 Azure Administrator.JPG" alt="Azure" style="width:100%">
+                    <h4>Microsoft Certified Azure Administrator</h4>
+                    <p>Azure</p>
+                </div>
+            </div>
+
+            <div class="column cars">
+                <div class="content">
+                    <img src="images/CYBERARK Certified Trustee.JPG" alt="CyberArk" style="width:100%">
+                    <h4>CyberArk Certified Trustee</h4>
+                    <p>CyberArk</p>
+                </div>
+            </div>
+            
+            <div class="column cars">
+                <div class="content">
+                    <img src="images/NSE-1.JPG" alt="Fortinet" style="width:100%">
+                    <h4>Network Security Associate (NSE-1)</h4>
+                    <p>Fortinet</p>
+                </div>
+            </div>
+
+            <div class="column people">
+                <div class="content">
+                    <img src="images/NSE-2.JPG" alt="Fortinet" style="width:100%">
+                    <h4>Network Security Associate (NSE-2)</h4>
+                    <p>Fortinet</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/scrum associate.JPG" alt="CertiProf" style="width:100%">
+                    <h4>Scrum Associate Accredited Certification™</h4>
+                    <p>International Scrum Institute™</p>
+                </div>
+            </div>
+            
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Certified Kanban.JPG" alt="CertiProf" style="width:100%">
+                    <h4>Certified Kanban Associate (Kanban-ASC™)</h4>
+                    <p>International Scrum Institute™</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Scrum Certificate.JPG" alt="CertiProf" style="width:100%">
+                    <h4>Scrum Foundation Professional Certified</h4>
+                    <p>Scrum Foundation</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Scrum Fundamentals Certified (SFC™).jpg" alt="SCRUMstudy" style="width:100%">
+                    <h4>Scrum Fundamentals Certified (SFC™)</h4>
+                    <p>CertiProf - Scrum Fundamentals</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/DevOps Essentials Professional Certificate (DEPCP)-1.jpg" alt="SCRUMstudy" style="width:100%">
+                    <h4>DevOps Essentials Professional Certificate (DEPCP)</h4>
+                    <p>CertiProf - DevOps Essentials</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/PME.JPG" alt="Management and Strategy Institute" style="width:100%">
+                    <h4>Project Management Essentials Certified</h4>
+                    <p>Management and Strategy Institute</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Docker Essentials-1.jpg" alt="Oracle" style="width:100%">
+                    <h4>Docker Essentials: A Developer Introduction</h4>
+                    <p>IBM CLoud</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Six-Sigma.JPG" alt="Management and Strategy Institute" style="width:100%">
+                    <h4>Lean Six Sigma White Belt Certified</h4>
+                    <p>Management and Strategy Institute</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/SixSigma-YellowBelt.JPG" alt="6sigmastudy" style="width:100%">
+                    <h4>Six Sigma Yellow Belt Certified</h4>
+                    <p>6sigmastudy</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/ArangoDB Cert.JPG" alt="ArangoDB" style="width:100%">
+                    <h4>ArangoDB Certified Professional</h4>
+                    <p>ArangoDB</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/OCI-1z0-1085.JPG" alt="Oracle" style="width:100%">
+                    <h4>Oracle Cloud Infrastructure Foundations Associate</h4>
+                    <p>Oracle CLoud</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Operation-Associate-eCertificate-1.jpg" alt="Oracle" style="width:100%">
+                    <h4>Oracle Cloud Infrastructure Operations Associate</h4>
+                    <p>Oracle CLoud</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/eCertificate OCI-1084-1.jpg" alt="Oracle" style="width:100%">
+                    <h4>Oracle Cloud Infrastructure Developer Associate</h4>
+                    <p>Oracle CLoud</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/HashiCorp_Certified__Terraform_Associate.jpg" alt="Oracle" style="width:100%">
+                    <h4>Terraform Associate</h4>
+                    <p>Hashicorp</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Zerto_Certified_Associate__Foundations_8.0_Badge20201009-58-ji3smf-1.jpg" alt="Oracle" style="width:100%">
+                    <h4>Zerto Certified Associate</h4>
+                    <p>Zerto</p>
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img src="images/Aviatrix MCNA Associate-1.jpg" alt="Oracle" style="width:100%">
+                    <h4>Aviatrix Certified Engineer – Multi-Cloud Network Associate</h4>
+                    <p>Aviatrix</p>
+                </div>
+            </div>
+
+            <div class="column cars">
+                <div class="content">
+                    <img src="images/DASA Fundamentals.JPG" alt="Exasol" style="width:100%">
+                    <h4>DASA DevOps Fundamentals</h4>
+                    <p>DASA</p>
+                </div>
+            </div>
+
+            <!-- END GRID -->
+        </div>
+
+        <!-- hitwebcounter Code START -->
+        <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7542486&style=0008&nbdigits=4&type=page&initCount=0"
+                title="Web Counter" Alt="counter free" border="0">
+        </a>
+
+        <!-- END MAIN -->
+    </div>
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+</body>
+
+</html>
